@@ -17,3 +17,5 @@ Relocated P4-VM folder to the Virtual Machine
 
 Open P4-PC from your main PC
 * Start the app with index and start inputting your login credentials in login page
+
+Java codes are available at \src\main\java\com\enrollment\backend for both nodes
