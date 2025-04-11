@@ -80,10 +80,3 @@ Handles:
 
 5. Input your login credentials on the login page and proceed to use the app.
 
----
-
-## Notes
-
-- Ensure that your local database is running before launching the services.
-- Git LFS is used for large assets (e.g., demo videos). Make sure to install Git LFS if cloning the repo.
-
