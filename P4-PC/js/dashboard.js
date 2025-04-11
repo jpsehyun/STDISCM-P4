@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     } catch (err) {
       console.error("Backend server unreachable:", err);
       if (statusMessage) {
-        statusMessage.textContent = "⚠️ The course system is temporarily unavailable. Please try again later.";
+        statusMessage.textContent = "The course system is temporarily unavailable. Please try again later.";
       }
     }
   });
