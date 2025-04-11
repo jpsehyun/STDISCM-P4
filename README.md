@@ -8,6 +8,16 @@
 
 ---
 
+## Notes
+
+- Ensure that your local database is running before launching the services.
+- Git LFS is used for large assets (e.g., demo videos). Make sure to install Git LFS if cloning the repo.
+- **Do not download this repository as a ZIP** — GitHub ZIP downloads do **not** include the actual LFS files (e.g., the `.mp4` demo video).  
+  To access the full video and all files correctly, you must **clone the repository** using:
+
+  ```bash
+  git clone https://github.com/jpsehyun/STDISCM-P4.git
+
 ## Demo Video Timestamp
 
 - `0:00 ~ 05:23` → Application Demo  
