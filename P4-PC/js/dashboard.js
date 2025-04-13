@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const statusMessage = document.getElementById("status-message");
   
     try {
-      const enrolledRes = await fetch("http://localhost:8080/enrollments", {
+      const enrolledRes = await fetch("http://192.168.254.123:8080/enrollments", {
         headers: { Authorization: `Bearer ${token}` }
       });
   
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const enrolledCourses = await enrolledRes.json();
       const enrolledCourseIds = enrolledCourses.map(e => e.courseId);
   
-      const res = await fetch("http://localhost:8080/courses", {
+      const res = await fetch("http://192.168.254.123:8080/courses", {
         headers: { Authorization: `Bearer ${token}` }
       });
   
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           btn.textContent = "Enroll";
           btn.onclick = async () => {
             try {
-              const enrollRes = await fetch("http://localhost:8080/enrollments", {
+              const enrollRes = await fetch("http://192.168.254.123:8080/enrollments", {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",

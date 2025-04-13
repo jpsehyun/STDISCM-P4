@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const token = localStorage.getItem("jwt");
 
   try {
-    const res = await fetch("http://localhost:8080/courses", {
+    const res = await fetch("http://192.168.254.123:8080/courses", {
       headers: { Authorization: `Bearer ${token}` }
     });
 
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const studentList = document.createElement("ul");
 
       try {
-        const enrollmentsRes = await fetch(`http://localhost:8080/enrollments/course/${course.id}`, {
+        const enrollmentsRes = await fetch(`http://192.168.254.123:8080/enrollments/course/${course.id}`, {
           headers: { Authorization: `Bearer ${token}` }
         });
 
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
           button.onclick = async () => {
             try {
-              const gradeRes = await fetch(`http://localhost:8082/grades/${enrollment.id}`, {
+              const gradeRes = await fetch(`http://192.168.254.123:8082/grades/${enrollment.id}`, {
                 method: "PUT",
                 headers: {
                   "Content-Type": "application/json",

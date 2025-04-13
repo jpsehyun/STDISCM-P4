@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const list = document.getElementById("grade-list");
 
   try {
-    const res = await fetch("http://localhost:8080/enrollments", {
+    const res = await fetch("http://192.168.254.123:8080/enrollments", {
       headers: { Authorization: `Bearer ${token}` }
     });
 
