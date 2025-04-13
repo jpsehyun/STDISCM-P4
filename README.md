@@ -20,8 +20,8 @@
 
 ## Demo Video Timestamp
 
-- `0:00 ~ 05:23` → Application Demo  
-- `05:23 ~ 10:38` → MVC Design and JWT Authentication in Code
+- `0:00 ~ 06:47` → Application Demo  
+- `06:48 ~ 11:43` → MVC Design and JWT Authentication in Code
 
 ---
 
