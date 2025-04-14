@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const enrolledCourses = await enrolledRes.json();
       const enrolledCourseIds = enrolledCourses.map(e => e.courseId);
   
-      const res = await fetch("http://192.168.254.123:8080/courses", {
+      const res = await fetch("http://192.168.254.123:8083/courses", {
         headers: { Authorization: `Bearer ${token}` }
       });
   
